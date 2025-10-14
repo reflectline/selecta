@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c27e3b4a-282b-487e-a54a-f370675df13b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="33vDtqcNTMRcPdNfLrbgtym18rV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -93,7 +96,7 @@
       <workItem from="1760458939750" duration="1355000" />
       <workItem from="1760464201608" duration="208000" />
       <workItem from="1760464435265" duration="5288000" />
-      <workItem from="1760475061701" duration="1186000" />
+      <workItem from="1760475061701" duration="1561000" />
     </task>
     <servers />
   </component>
