@@ -25,4 +25,4 @@ git clone https://github.com/yourusername/selecta.git
 3. Choose the desired action
 
 ## License
-MIT © 2025 [Your Name]
+MIT © 2025 [Cyril]
