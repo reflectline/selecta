@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c27e3b4a-282b-487e-a54a-f370675df13b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="33vDtqcNTMRcPdNfLrbgtym18rV" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.content.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c27e3b4a-282b-487e-a54a-f370675df13b" name="Changes" comment="" />
+      <created>1760188870428</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760188870428</updated>
+      <workItem from="1760188873977" duration="1303000" />
+      <workItem from="1760197574851" duration="57000" />
+      <workItem from="1760197912781" duration="1578000" />
+      <workItem from="1760201895786" duration="3160000" />
+      <workItem from="1760208179741" duration="10332000" />
+      <workItem from="1760220758179" duration="7742000" />
+      <workItem from="1760231487600" duration="10061000" />
+      <workItem from="1760270647788" duration="1000" />
+      <workItem from="1760270685145" duration="1335000" />
+      <workItem from="1760275615794" duration="155000" />
+      <workItem from="1760275820226" duration="778000" />
+      <workItem from="1760276791749" duration="4223000" />
+      <workItem from="1760289969095" duration="2390000" />
+      <workItem from="1760295276336" duration="36000" />
+      <workItem from="1760296102178" duration="997000" />
+      <workItem from="1760299836774" duration="709000" />
+      <workItem from="1760309382727" duration="5378000" />
+      <workItem from="1760317784693" duration="5627000" />
+      <workItem from="1760323472665" duration="3714000" />
+      <workItem from="1760360756033" duration="5002000" />
+      <workItem from="1760378449694" duration="3166000" />
+      <workItem from="1760383933815" duration="5185000" />
+      <workItem from="1760393299532" duration="7487000" />
+      <workItem from="1760445202473" duration="4255000" />
+      <workItem from="1760458939750" duration="1355000" />
+      <workItem from="1760464201608" duration="208000" />
+      <workItem from="1760464435265" duration="5288000" />
+      <workItem from="1760475061701" duration="848000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

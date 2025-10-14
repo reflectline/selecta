@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "Selecta"
+  },
+  "appDescription": {
+    "message": "Показывает меню при выделении текста: копировать, поиск в Яндекс и Google."
+  }
+}
