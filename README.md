@@ -14,7 +14,7 @@ Chrome extension showing a context menu when text is selected: copy, search on Y
 
 ### Local installation:
 1. Clone the repository:
-git clone https://github.com/yourusername/selecta.git
+git clone https://github.com/reflectline/selecta.git
 2. Open chrome://extensions/ in Chrome
 3. Enable Developer mode
 4. Click Load unpacked and select the project folder
@@ -25,4 +25,4 @@ git clone https://github.com/yourusername/selecta.git
 3. Choose the desired action
 
 ## License
-MIT © 2025 [Cyril]
+MIT © 2025 Reflectline

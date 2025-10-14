@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c27e3b4a-282b-487e-a54a-f370675df13b" name="Changes" comment="" />
+    <list default="true" id="c27e3b4a-282b-487e-a54a-f370675df13b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +15,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "reflectline"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/reflectline/selecta.git",
+    "accountId": "8658a8f6-60ed-48b9-817d-8ab1ce9ebdc6"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -79,7 +93,7 @@
       <workItem from="1760458939750" duration="1355000" />
       <workItem from="1760464201608" duration="208000" />
       <workItem from="1760464435265" duration="5288000" />
-      <workItem from="1760475061701" duration="848000" />
+      <workItem from="1760475061701" duration="1186000" />
     </task>
     <servers />
   </component>
