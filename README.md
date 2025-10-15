@@ -7,11 +7,6 @@ Chrome extension showing a context menu when text is selected: copy, search on Y
 - Ignores input, textarea, and contenteditable fields
 - Minimalist dark UI
 
-## Installation
-### Via Chrome Web Store:
-1. Go to the [Selecta page on Chrome Web Store](#)
-2. Click **Add to Chrome**
-
 ### Local installation:
 1. Clone the repository:
 git clone https://github.com/reflectline/selecta.git
