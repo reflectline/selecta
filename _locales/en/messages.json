@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "Selecta"
+  },
+  "appDescription": {
+    "message": "Shows a quick menu on text selection: copy, search in Yandex or Google."
+  }
+}
