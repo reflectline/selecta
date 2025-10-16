@@ -54,7 +54,7 @@ document.addEventListener("mouseup", (e) => {
         if (!edge) return;
 
         selectionRect = edge.rect;
-        showMenuAt(edge.rect, text, edge.isDown);
+        showMenuAt(edge.rect, text, edge.isDown, e);
     }, 0);
 });
 
@@ -105,7 +105,7 @@ function isInInput(selection) {
     return false;
 }
 
-function showMenuAt(rect, text, isDown) {
+function showMenuAt(rect, text, isDown, mouseEvent) {
     removeMenu();
 
     const userLang = navigator.language || navigator.userLanguage;
@@ -126,7 +126,7 @@ function showMenuAt(rect, text, isDown) {
       position: absolute;
       display: flex;
       align-items: center;
-      padding: 4px 4px 4px 4px;
+      padding: 4px;
       background: #282828;
       border-radius: 8px;
       z-index: 999999;
@@ -219,7 +219,7 @@ function showMenuAt(rect, text, isDown) {
       transition: all 0.15s;
       border-radius: 6px;
       color: #fff;
-      padding: 4px 6px 4px 6px;
+      padding: 4px 6px;
    }
    #closeBtn:hover {
       background: #4c4c4c;
@@ -261,6 +261,25 @@ function showMenuAt(rect, text, isDown) {
             ? `${rect.bottom + offsetBottom}px`
             : `${rect.top - menu.offsetHeight - offsetTop}px`;
         menu.style.left = `${rect.left + rect.width / 2 - menu.offsetWidth / 2}px`;
+
+        const MARGIN_LEFT = 8;
+        const MARGIN_RIGHT = 24;
+
+        let left = rect.left + rect.width / 2 - menu.offsetWidth / 2 + window.scrollX;
+
+        const viewportWidth = window.innerWidth;
+        const menuWidth = menu.offsetWidth;
+
+        if (left < window.scrollX + MARGIN_LEFT) {
+            left = window.scrollX + MARGIN_LEFT;
+        }
+
+        const rightEdge = window.scrollX + viewportWidth - MARGIN_RIGHT;
+        if (left + menuWidth > rightEdge) {
+            left = rightEdge - menuWidth;
+        }
+
+        menu.style.left = `${left}px`;
     });
 
     shadow.querySelector("#copyBtn")?.addEventListener("click", () => {
