@@ -60,7 +60,7 @@ document.addEventListener("mouseup", (e) => {
 
 let justOpenedContextMenu = false;
 
-document.addEventListener("contextmenu", (e) => {
+document.addEventListener("contextmenu", () => {
     justOpenedContextMenu = true;
     if (menu) removeMenu();
     setTimeout(() => (justOpenedContextMenu = false), 200);
@@ -87,6 +87,7 @@ document.addEventListener("mousemove", (e) => {
     }
 });
 
+
 function isInInput(selection) {
     if (!selection?.anchorNode) return false;
 
@@ -105,7 +106,7 @@ function isInInput(selection) {
     return false;
 }
 
-function showMenuAt(rect, text, isDown, mouseEvent) {
+function showMenuAt(rect, text, isDown) {
     removeMenu();
 
     const userLang = navigator.language || navigator.userLanguage;
