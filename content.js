@@ -4,16 +4,6 @@ let selectionRect = null;
 const SAFE_MARGIN_X = 250; // горизонтальная зона безопасности
 const SAFE_MARGIN_Y = 50;  // вертикальная зона безопасности
 
-
-// Вертикальные смещения меню относительно выделения
-const MENU_OFFSET_TOP = 3;       // отступ сверху, когда меню появляется над выделением
-const MENU_OFFSET_BOTTOM = 6;    // отступ снизу, когда меню появляется под выделением
-
-// Горизонтальные ограничения меню
-const MENU_MARGIN_LEFT = 8;      // минимальный отступ слева от окна
-const MENU_MARGIN_RIGHT = 24;    // минимальный отступ справа от окна
-const SMALL_SELECTION_HEIGHT = 50; // лимит растояния, выделенного текста, тригер расположения меню по вертикали
-
 const yandexIconURL = (() => {
     try { return chrome.runtime.getURL("icons/extends/yandex.png"); }
     catch { return ""; }
@@ -71,7 +61,7 @@ document.addEventListener("mouseup", (e) => {
 
 let justOpenedContextMenu = false;
 
-document.addEventListener("contextmenu", () => {
+document.addEventListener("contextmenu", (e) => {
     justOpenedContextMenu = true;
     if (menu) removeMenu();
     setTimeout(() => (justOpenedContextMenu = false), 200);
@@ -98,7 +88,6 @@ document.addEventListener("mousemove", (e) => {
     }
 });
 
-
 function isInInput(selection) {
     if (!selection?.anchorNode) return false;
 
@@ -117,7 +106,7 @@ function isInInput(selection) {
     return false;
 }
 
-function showMenuAt(rect, text, isDown) {
+function showMenuAt(rect, text, isDown, mouseEvent) {
     removeMenu();
 
     const userLang = navigator.language || navigator.userLanguage;
@@ -267,27 +256,26 @@ function showMenuAt(rect, text, isDown) {
 
     requestAnimationFrame(() => {
         if (!menu) return;
-
-        const selectionHeight = rect.bottom - rect.top;
-
-        if (selectionHeight < SMALL_SELECTION_HEIGHT) {
-            menu.style.top = `${mouseEvent.clientY + MENU_OFFSET_BOTTOM}px`;
-        } else {
-            menu.style.top = isDown
-                ? `${rect.bottom + MENU_OFFSET_BOTTOM}px`
-                : `${rect.top - menu.offsetHeight - MENU_OFFSET_TOP}px`;
-        }
+        const offsetTop = 3;
+        const offsetBottom = 6;
+        menu.style.top = isDown
+            ? `${rect.bottom + offsetBottom}px`
+            : `${rect.top - menu.offsetHeight - offsetTop}px`;
         menu.style.left = `${rect.left + rect.width / 2 - menu.offsetWidth / 2}px`;
 
+        const MARGIN_LEFT = 8;
+        const MARGIN_RIGHT = 24;
+
         let left = rect.left + rect.width / 2 - menu.offsetWidth / 2 + window.scrollX;
+
         const viewportWidth = window.innerWidth;
         const menuWidth = menu.offsetWidth;
 
-        if (left < window.scrollX + MENU_MARGIN_LEFT) {
-            left = window.scrollX + MENU_MARGIN_LEFT;
+        if (left < window.scrollX + MARGIN_LEFT) {
+            left = window.scrollX + MARGIN_LEFT;
         }
 
-        const rightEdge = window.scrollX + viewportWidth - MENU_MARGIN_RIGHT;
+        const rightEdge = window.scrollX + viewportWidth - MARGIN_RIGHT;
         if (left + menuWidth > rightEdge) {
             left = rightEdge - menuWidth;
         }
