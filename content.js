@@ -106,6 +106,8 @@ function isInInput(selection) {
     return false;
 }
 
+
+
 function showMenuAt(rect, text, isDown, mouseEvent) {
     removeMenu();
 
