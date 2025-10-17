@@ -25,6 +25,7 @@ const logoinsideIconURL = (() => {
     catch { return ""; }
 })();
 
+
 document.addEventListener("mouseup", (e) => {
     if (menu && (e.composedPath?.()?.includes(menu) || menu.contains(e.target))) return;
     if (menu) return;
