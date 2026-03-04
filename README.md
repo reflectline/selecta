@@ -1,7 +1,7 @@
 # Selecta
 Chrome extension showing a context menu when text is selected: copy, search on Yandex and Google.
 
-![Selecta demo](demo/example.png)
+![Selecta demo](readme_assets/example.png)
 ## Features
 - Copy selected text
 - Search on Yandex and Google
